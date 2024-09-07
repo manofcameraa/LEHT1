@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KalmistuHooldus - Kontaktid ja Võta meiega ühendust">
+    <title>Kontaktid ja Võta meiega ühendust - KalmistuHooldus</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-family: "Arial", sans-serif;
+            color: #333;
+        }
+
+        nav {
+            background-color: #e2e2e2;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KalmistuHooldus</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Avaleht</a>
+        <a href="teenused.html">Teenused</a>
+        <a href="meist.html">Meist</a>
+        <a href="kontakt.html">Kontaktid</a>
+        <a href="kontaktivorm.html">Võta meiega ühendust</a>
+    </nav>
+
+    <section>
+        <h2>Kontaktid</h2>
+        <p>Telefon: +372 1234 5678</p>
+        <p>Email: info@kalmistuhooldus.ee</p>
+        <p>Aadress: Kalmistu 1, 12345 Tallinn, Eesti</p>
+    </section>
+
+    <section>
+        <h2>Võta meiega ühendust</h2>
+        <form action="mailto:info@kalmistuhooldus.ee" method="post" enctype="text/plain">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Sõnum:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Saada</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KalmistuHooldus. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>
